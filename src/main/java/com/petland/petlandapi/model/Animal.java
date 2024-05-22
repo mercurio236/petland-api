@@ -1,7 +1,11 @@
 package com.petland.petlandapi.model;
 
-import jakarta.persistence.Embedded;
+import java.time.LocalDate;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -10,21 +14,22 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 
-
 @Entity
-@Table(name = "tab_cadastro")
 @Data
-public class Cadastro {
+@Table(name = "tab_animal")
+public class Animal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(value = AccessLevel.NONE)
-    private Integer id;
-    private String nome;
-
-    @Embedded
-    private Perfil perfil;
     
-    @Embedded
-    private Endereco endereco;
+    @Setter(value = AccessLevel.NONE)
+    private Integer Id;
+
+    @Column(length = 50, nullable = false)
+    private String nome;
+    
+    private LocalDate aniversario;
+
+    @Enumerated(EnumType.STRING)
+    private Especie especie;
 }
