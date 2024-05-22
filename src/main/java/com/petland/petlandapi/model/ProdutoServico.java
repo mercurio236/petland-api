@@ -12,7 +12,7 @@ import lombok.Setter;
 
 @Entity
 @Data
-@Table(name = "tab_cadastro")
+@Table(name = "tab_produto_servico")
 public class ProdutoServico {
 
     @Id
