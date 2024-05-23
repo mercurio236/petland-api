@@ -1,6 +1,8 @@
-package com.petland.petlandapi.model;
+package com.petland.petlandapi.model.entity;
 
 import java.time.LocalDate;
+
+import com.petland.petlandapi.model.Especie;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Data
 @Table(name = "tab_animal")
-public class Animal {
+public class AnimalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
