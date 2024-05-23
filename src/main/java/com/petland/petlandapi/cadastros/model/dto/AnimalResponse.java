@@ -1,4 +1,4 @@
-package com.petland.petlandapi.model.dto;
+package com.petland.petlandapi.cadastros.model.dto;
 
 
 import lombok.Data;

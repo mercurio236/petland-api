@@ -1,4 +1,4 @@
-package com.petland.petlandapi.controller;
+package com.petland.petlandapi.cadastros.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,11 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
-import com.petland.petlandapi.model.ProdutoServico;
-import com.petland.petlandapi.model.dto.AnimalRequest;
-import com.petland.petlandapi.model.dto.AnimalResponse;
-import com.petland.petlandapi.model.entity.AnimalEntity;
-import com.petland.petlandapi.service.AnimalService;
+
+import com.petland.petlandapi.cadastros.model.dto.AnimalRequest;
+import com.petland.petlandapi.cadastros.model.dto.AnimalResponse;
+import com.petland.petlandapi.cadastros.service.AnimalService;
 
 @RestController
 @RequestMapping("/animais")

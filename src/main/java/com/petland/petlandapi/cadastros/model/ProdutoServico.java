@@ -1,4 +1,4 @@
-package com.petland.petlandapi.model;
+package com.petland.petlandapi.cadastros.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

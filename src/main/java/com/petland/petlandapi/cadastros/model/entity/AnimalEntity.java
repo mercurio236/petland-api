@@ -1,8 +1,8 @@
-package com.petland.petlandapi.model.entity;
+package com.petland.petlandapi.cadastros.model.entity;
 
 import java.time.LocalDate;
 
-import com.petland.petlandapi.model.Especie;
+import com.petland.petlandapi.cadastros.model.Especie;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -34,4 +34,7 @@ public class AnimalEntity {
 
     @Enumerated(EnumType.STRING)
     private Especie especie;
+
+    @Column(name = "cad_tutor")
+    private Integer tutor;
 }

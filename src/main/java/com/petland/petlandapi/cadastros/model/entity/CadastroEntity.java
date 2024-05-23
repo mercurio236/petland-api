@@ -1,7 +1,7 @@
-package com.petland.petlandapi.model.entity;
+package com.petland.petlandapi.cadastros.model.entity;
 
-import com.petland.petlandapi.model.Endereco;
-import com.petland.petlandapi.model.Perfil;
+import com.petland.petlandapi.cadastros.model.Endereco;
+import com.petland.petlandapi.cadastros.model.Perfil;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -12,7 +12,6 @@ import jakarta.persistence.Table;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
-
 
 @Entity
 @Table(name = "tab_cadastro")
@@ -27,7 +26,8 @@ public class CadastroEntity {
 
     @Embedded
     private Perfil perfil;
-    
+
     @Embedded
     private Endereco endereco;
+
 }

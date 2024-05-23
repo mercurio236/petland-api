@@ -1,4 +1,4 @@
-package com.petland.petlandapi.model;
+package com.petland.petlandapi.cadastros.model;
 
 public enum Especie {
     CACHORRO,
